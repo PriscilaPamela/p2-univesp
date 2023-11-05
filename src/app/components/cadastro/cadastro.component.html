@@ -1,0 +1,211 @@
+
+<div *ngIf="formularioSelecionado === 'formulario1'">
+  <h3 style="margin-top: 4rem;">Laboratório 1</h3>
+  <form>
+    <div class="form-group">
+      <label class="labelForm1" for="codigo">Código do Produto</label>
+      <input class="inputProd" type="text" id="codigo" name="codigo" [(ngModel)]="produto.codigo">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="nome">Nome do Produto</label>
+      <input class="inputProd2" type="text" id="nome" name="nome" [(ngModel)]="produto.nome">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="quantidade">Quantidade</label>
+      <input type="text" id="quantidade" name="quantidade" [(ngModel)]="produto.quantidade">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="validade">Validade</label>
+      <input type="date" id="validade" name="validade" [(ngModel)]="produto.validade">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="validade">Observações</label>
+      <input type="text" id="validade" name="observacao" [(ngModel)]="produto.observacao">
+    </div>
+    <button class="buttonAdicionar" (click)="adicionarProduto()">Adicionar</button>
+  </form>
+  <br><br>
+  <!-- Tabela para exibir os produtos cadastrados -->
+  <div>
+    <table class="tabelaform">
+      <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Validade</th>
+        <th>Observações</th>
+        <th>Ações</th>
+      </tr>
+      <tr *ngFor="let produto of produtosFormulario1">
+        <td>{{ produto.codigo }}</td>
+        <td>{{ produto.nome }}</td>
+        <td>{{ produto.quantidade }}</td>
+        <td>{{ produto.validade | date: 'dd/MM/yyyy' }}</td>
+        <td>{{ produto.observacao}}</td>
+        <td>
+          <button class="buttonAcoes" (click)="editarProduto(produto)">Editar</button>
+          <button class="buttonAcoes" (click)="excluirProduto(produto, 'formulario1')">Excluir</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><br><br>
+
+<div *ngIf="formularioSelecionado === 'formulario2'">
+  <h3>Laboratório 2</h3>
+  <form>
+    <div class="form-group">
+      <label class="labelForm1" for="codigo">Código do Produto</label>
+      <input class="inputProd" type="text" id="codigo" name="codigo" [(ngModel)]="produto.codigo">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="nome">Nome do Produto</label>
+      <input class="inputProd2" type="text" id="nome" name="nome" [(ngModel)]="produto.nome">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="quantidade">Quantidade</label>
+      <input type="text" id="quantidade" name="quantidade" [(ngModel)]="produto.quantidade">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="validade">Validade</label>
+      <input type="date" id="validade" name="validade" [(ngModel)]="produto.validade">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="validade">Observações</label>
+      <input type="text" id="validade" name="observacao" [(ngModel)]="produto.observacao">
+    </div>
+    <button class="buttonAdicionar" (click)="adicionarProduto()">Adicionar</button>
+  </form>
+  <br><br>
+  <!-- Tabela para exibir os produtos cadastrados -->
+  <div>
+
+    <table class="tabelaform">
+      <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Validade</th>
+        <th>Observações</th>
+        <th>Ações</th>
+      </tr>
+      <tr *ngFor="let produto of produtosFormulario2">
+        <td>{{ produto.codigo }}</td>
+        <td>{{ produto.nome }}</td>
+        <td>{{ produto.quantidade }}</td>
+        <td>{{ produto.validade | date: 'dd/MM/yyyy' }}</td>
+        <td>{{ produto.observacao}}</td>
+        <td>
+          <button class="buttonAcoes" (click)="editarProduto(produto)">Editar</button>
+        <button class="buttonAcoes" (click)="excluirProduto(produto, 'formulario2')">Excluir</button>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+<div *ngIf="formularioSelecionado === 'formulario3'">
+  <h3>Laboratório 3</h3>
+  <form>
+    <div class="form-group">
+      <label class="labelForm1" for="codigo">Código do Produto</label>
+      <input class="inputProd" type="text" id="codigo" name="codigo" [(ngModel)]="produto.codigo">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="nome">Nome do Produto</label>
+      <input class="inputProd2" type="text" id="nome" name="nome" [(ngModel)]="produto.nome">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="quantidade">Quantidade</label>
+      <input type="text" id="quantidade" name="quantidade" [(ngModel)]="produto.quantidade">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="validade">Validade</label>
+      <input type="date" id="validade" name="validade" [(ngModel)]="produto.validade">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="validade">Observações</label>
+      <input type="text" id="validade" name="observacao" [(ngModel)]="produto.observacao">
+    </div>
+    <button class="buttonAdicionar" (click)="adicionarProduto()">Adicionar</button>
+  </form>
+  <br><br>
+  <!-- Tabela para exibir os produtos cadastrados -->
+  <div>
+    <table class="tabelaform">
+      <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Validade</th>
+        <th>Observações</th>
+        <th>Ações</th>
+      </tr>
+      <tr *ngFor="let produto of produtosFormulario3">
+        <td>{{ produto.codigo }}</td>
+        <td>{{ produto.nome }}</td>
+        <td>{{ produto.quantidade }}</td>
+        <td>{{ produto.validade | date: 'dd/MM/yyyy' }}</td>
+        <td>{{ produto.observacao}}</td>
+        <td>
+          <button class="buttonAcoes" (click)="editarProduto(produto)">Editar</button>
+        <button class="buttonAcoes" (click)="excluirProduto(produto, 'formulario3')">Excluir</button>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+<div *ngIf="formularioSelecionado === 'formulario4'">
+  <h3>Laboratório 4</h3>
+  <form>
+    <div class="form-group">
+      <label class="labelForm1" for="codigo">Código do Produto</label>
+      <input class="inputProd" type="text" id="codigo" name="codigo" [(ngModel)]="produto.codigo">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="nome">Nome do Produto</label>
+      <input class="inputProd2" type="text" id="nome" name="nome" [(ngModel)]="produto.nome">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="quantidade">Quantidade</label>
+      <input type="text" id="quantidade" name="quantidade" [(ngModel)]="produto.quantidade">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="validade">Validade</label>
+      <input type="date" id="validade" name="validade" [(ngModel)]="produto.validade">
+    </div>
+    <div class="form-group">
+      <label class="labelForm1" for="validade">Observações</label>
+      <input type="text" id="validade" name="observacao" [(ngModel)]="produto.observacao">
+    </div>
+    <button class="buttonAdicionar" (click)="adicionarProduto()">Adicionar</button>
+  </form>
+  <br><br>
+  <!-- Tabela para exibir os produtos cadastrados -->
+  <div>
+    <table class="tabelaform">
+      <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Validade</th>
+        <th>Observações</th>
+        <th>Ações</th>
+      </tr>
+      <tr *ngFor="let produto of produtosFormulario4">
+        <td>{{ produto.codigo }}</td>
+        <td>{{ produto.nome }}</td>
+        <td>{{ produto.quantidade }}</td>
+        <td>{{ produto.validade | date: 'dd/MM/yyyy' }}</td>
+        <td>{{ produto.observacao}}</td>
+        <td>
+          <button  class="button.edit" (click)="editarProduto(produto)">Editar</button>
+        <button class="button.delete buttonAcoes" (click)="excluirProduto(produto, 'formulario4')">Excluir</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

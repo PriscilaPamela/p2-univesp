@@ -1,0 +1,81 @@
+
+/* Estilização do formulário de cadastro */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    margin-left: 5rem;
+}
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 5rem;
+  }
+  
+  /* Estilização da tabela de produtos */
+
+  h3{
+    font-weight: bold;
+    margin-left: 12rem;
+    margin-top: 1rem
+  }
+  .tabelaform {
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: 9rem;
+    padding: 8px;
+
+  }
+  
+  th {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #271443;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilização dos botões de edição/exclusão */
+  .buttonAdicionar {
+    background-color: #1a2d43;
+    color: #fff;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    width: 29.8%;
+    font-weight: bold;
+  }
+
+  .buttonAcoes{
+    margin: 0.5rem;
+  }
+  
+  button.edit {
+    background-color: #28a745; /* Verde para botão de edição */
+  }
+  
+  button.delete {
+    background-color: #dc3545; /* Vermelho para botão de exclusão */
+  }
+  
+

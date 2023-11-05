@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+  /* Ajuste de estilos para telas menores */
+}
+/* @media para telas ainda menores (dispositivos móveis) */
+@media (max-width: 480px) {
+  /* Ajuste de estilos para dispositivos móveis */
+}
+
+.header {
+  margin-top: auto;
+  background-color: #544e56;
+  color: rgb(248, 242, 242);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+  width: 97%;
+
+}
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menu-toggle {
+  width: 50px;
+  height: 30px;
+  background-color: #302a30;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-content {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #f5eeee;
+  z-index: 999;
+  transition: left 0.4s;
+  overflow-y: auto;
+}
+
+.menu-content.open {
+  left: 0;
+}
+
+.menu-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-content li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: #2f2a2f;
+  font-size: 18px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-right: 2rem;
+}
+
+.login input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.login button {
+  background-color: #444343;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+

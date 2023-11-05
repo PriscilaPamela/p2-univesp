@@ -1,0 +1,30 @@
+img{
+    width: 15%;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    padding-inline: 80px;
+
+}
+
+.imgRodape{
+    width: 10%;
+}
+
+.contato {
+    width: 100%;
+    background-color: #423a42;
+    color: hsl(0, 0%, 100%);
+    padding: 3px;
+    margin-top: 3rem;
+    text-align: center;
+    padding: 3px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+footer p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+  
+  

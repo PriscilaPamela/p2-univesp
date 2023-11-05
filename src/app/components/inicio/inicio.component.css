@@ -1,0 +1,63 @@
+.divimagem {
+  display: flex;
+  align-items: center;
+}
+
+.imagemInicio {
+  margin-left: 4rem;
+  margin-right: 20px; /* Aumente a margem direita para criar mais espaço entre a imagem e o texto */
+  max-width: 600px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.conteudoDireita {
+  flex-grow: 1;
+}
+
+.ApresentacaoSite {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left; /* Alinhe o texto à esquerda */
+  max-width: 70%; /* Defina uma largura máxima para o texto */  
+  word-wrap: break-word;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  align-items: center;
+  margin: 20px;
+}
+
+.card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #490c8a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  margin: 5px; /* Ajuste o espaçamento entre os botões conforme necessário */
+}
+
+.card:hover {
+  background-color: #2980b9;
+}
+
+.card:hover {
+  background-color: #2980b9;
+}
+
+
+
+  @media (max-width: 768px) {
+    /* Ajuste de estilos para telas menores */
+  }
+  /* @media para telas ainda menores (dispositivos móveis) */
+  @media (max-width: 480px) {
+    /* Ajuste de estilos para dispositivos móveis */
+  }
+
+

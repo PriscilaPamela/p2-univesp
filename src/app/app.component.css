@@ -1,0 +1,22 @@
+body {
+  background-color: #f0f0f0; /* Cor de fundo */
+  color: #333; /* Cor do texto */
+}
+  footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    /* Estilos para telas menores */
+  }
+  /* @media para telas ainda menores (dispositivos móveis) */
+  @media (max-width: 480px) {
+    /* Estilos para dispositivos móveis */
+  }
